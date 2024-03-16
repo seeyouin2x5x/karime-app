@@ -5,6 +5,7 @@ import {
   MD3LightTheme as DefaultTheme,
   PaperProvider,
 } from "react-native-paper";
+import TriviaGame from "./components/game";
 const theme = {
   colors: {
     primary: "rgb(16, 109, 32)",
@@ -54,8 +55,8 @@ export default function App() {
   return (
     <PaperProvider theme={theme}>
       <View style={styles.container}>
-        <MosqueList />
-        {/* <Text>Open up App.js to start working on your app!</Text> */}
+        <TriviaGame />
+        {/* <MosqueList /> */}
         <StatusBar style="auto" />
       </View>
     </PaperProvider>
